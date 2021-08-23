@@ -82,7 +82,7 @@ Perfect, we found our password for ftpuser from the list.
 
 ![task 16](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/77e7d02175015a0f9f6f8f3cb75e7c5020e6d934/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/16.%20sudo-permission-for-privesc.png)
 
-17. This means that we can use the exploit along with the vi and user.txt to privilege escalate. When working with binaries in a privesc situation, the GTFOBins page works wonders in helping us leverage the binary to get root.
+17. This means that we can use the exploit along with the vi and user.txt to privilege escalate. When working with binaries in a privesc situation, the GTFOBins page (https://gtfobins.github.io/gtfobins/vi/) works wonders in helping us leverage the binary to get root.
 
 ![task 17](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/77e7d02175015a0f9f6f8f3cb75e7c5020e6d934/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/17.%20edit-vi-for-root-permission.png)
 
