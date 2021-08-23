@@ -12,7 +12,7 @@ The results show us that it’s got a web service, FTP, and SSH enabled on the m
 
 ![task 2](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/18000fea3a413dfd63f51dd5ecf267fe36f70cd6/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/2.%20default-siteview.png)
 
-3. Use go buster for directory bruteforce.
+3. Use gobuster for directory bruteforce.
 
 ![task 3](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/5b4b28b78db2622295c1262d0088841a6c47d765/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/3.%20got-hidden-directory.png)
 
