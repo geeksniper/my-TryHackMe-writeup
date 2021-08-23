@@ -60,11 +60,38 @@ Perfect, we found our password for ftpuser from the list.
 
 11. Let’s open this text file.
 
-![task 10](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/2d1ea345944f16606cdeaa895fa9d33350daea5a/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/11.%20open-the-file-got-this-now-need-to-decode.png)
+![task 11](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/2d1ea345944f16606cdeaa895fa9d33350daea5a/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/11.%20open-the-file-got-this-now-need-to-decode.png)
 
 12. The very strange looking encoded text is actually an esoteric programming language called Brainf**k. Luckily there’s a publicly available decoder online, so it’s as simple as a clicking a button.
 
+![task 12](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/77e7d02175015a0f9f6f8f3cb75e7c5020e6d934/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/12.%20decode-this-string-got-the-ssh-userand-password.png)
 
+13. With the user credentials, we can login via SSH. Interesting MOTD message the moment we log in, so we find out immediately that there’s another user named Gwendoline and a hidden message on the machine.
+
+![task 13](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/77e7d02175015a0f9f6f8f3cb75e7c5020e6d934/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/13.%20login-ssh-using-username-and-password.png)
+
+14. There’s a word that’s spelt differently than everything else, so maybe that’s our keyword? Running a quick find command, we find that it does indeed point to a directory.
+
+![task 14](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/77e7d02175015a0f9f6f8f3cb75e7c5020e6d934/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/14.%20find-serct-file-and-got-the-password-of-gwendoline.png)
+
+15. The message is only for Gwendoline but it’s readable by everyone? Don’t mind if we do. The message contains Gwendoline’s password so let’s switch users and find that user flag. Running a quick find command, we find that the `user.txt` file is located on their desktop.
+
+![task 15](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/77e7d02175015a0f9f6f8f3cb75e7c5020e6d934/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/15.%20switch-user-and-got-user-flag.png)
+
+16. The `(ALL, !root) NO PASSWD:` portion of of the output is supposed to allow the user to run the programs as any other user besides root. That’s better safety practice than allowing full root access right? It sounds safe, but there was a major security flaw (CVE-2019-14287) found in all versions of Sudo prior to 1.8.28. The vulnerability allows the user to bypass the security policy.
+
+![task 16](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/77e7d02175015a0f9f6f8f3cb75e7c5020e6d934/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/16.%20sudo-permission-for-privesc.png)
+
+17. This means that we can use the exploit along with the vi and user.txt to privilege escalate. When working with binaries in a privesc situation, the GTFOBins page works wonders in helping us leverage the binary to get root.
+
+![task 17](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/77e7d02175015a0f9f6f8f3cb75e7c5020e6d934/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/17.%20edit-vi-for-root-permission.png)
+
+18. Let’s get cracking then! Use the `sudo -u#-1` syntax as noted on the website and copy the other parts from the `sudo -l` command.
+Nice! We got our root shell working and able to open the root flag!
+
+![task 18](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/77e7d02175015a0f9f6f8f3cb75e7c5020e6d934/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/18.%20after-editing-vi-file-got-root-flag.png)
+
+##finished
 
 
 
