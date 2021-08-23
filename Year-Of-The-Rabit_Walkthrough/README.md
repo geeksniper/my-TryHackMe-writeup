@@ -62,7 +62,7 @@ Perfect, we found our password for ftpuser from the list.
 
 ![task 10](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/2d1ea345944f16606cdeaa895fa9d33350daea5a/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/11.%20open-the-file-got-this-now-need-to-decode.png)
 
-12. The very strange looking encoded text is actually an esoteric programming language called **Brainf**k.** Luckily there’s a publicly available decoder online, so it’s as simple as a clicking a button.
+12. The very strange looking encoded text is actually an esoteric programming language called Brainf****k.** Luckily there’s a publicly available decoder online, so it’s as simple as a clicking a button.
 
 
 
