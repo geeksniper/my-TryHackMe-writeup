@@ -59,6 +59,6 @@ This room is designed for users to get familiar with the Bolt CMS and how it can
 ## finished
 
 
-![10 flag](bolt_walkthrough/img/bolt-img/1.nmapscan.png)
+![10 flag](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/5919718e075dfa41e78a5b4968cb31472334ce08/bolt_walkthrough/img/bolt-img/1.nmapscan.png)
 
 
