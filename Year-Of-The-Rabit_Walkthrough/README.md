@@ -34,6 +34,23 @@ Once it’s off, we’ll be taken to a page with a hint embedded within the vide
 
 ![task 6](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/f56ab7216e2b15f827b8243e5243787bf9a2e640/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/6.%20we-inspect-this-phpfile-and-got-hidendirectory-in-response-header.png)
 
+7. Goto this hidden directory.
+
+![task 7](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/6f9a6be88bf657fd2b273f68eafbe2abebd96045/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/7.%20goto-this-directory-got-a-picture-download-it.png)
+
+The hidden directory contains a PNG image file named Hot_Babe.png. Sounds like a stego challenge, so go ahead and download the file to analyze offline.
+
+8.0 Analyze this image with `string` command.
+
+![task 8.0](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/6f9a6be88bf657fd2b273f68eafbe2abebd96045/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/8.0%20see-the-string-value-of-this-image.png)
+
+8.1 We got a viable `username` and also a list of potential `passwords`.
+
+![task 8.1](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/6f9a6be88bf657fd2b273f68eafbe2abebd96045/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/8.1%20got-ftp-user-name-and-password.png)
+
+
+
+
 
 
 
