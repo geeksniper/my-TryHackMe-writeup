@@ -59,4 +59,6 @@ This room is designed for users to get familiar with the Bolt CMS and how it can
 ## finished
 
 
+![10 flag](bolt_walkthrough/img/bolt-img/1.nmapscan.png)
+
 
