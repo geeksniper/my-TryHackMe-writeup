@@ -18,5 +18,23 @@ The results show us that it’s got a web service, FTP, and SSH enabled on the m
 
 I used a pre-made list “common.txt” file from the dirb directory and it proved sufficient in this case.we got assets directory.lets jump into it.
 
-4. 
+4. We’ll go to the assets directory and take a look at the style.css file there. There’s a hint hidden within the file.
+
+![task 4](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/f56ab7216e2b15f827b8243e5243787bf9a2e640/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/4.%20got-hidden-directory-in-css-comment.png)
+
+Nice! We got another lead to work with. Let’s go the page next.
+
+5. When we load into it, there’s a pop-up with a prompt to turn off your Javascript. A quick web search should take care of that.
+
+![task 5](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/f56ab7216e2b15f827b8243e5243787bf9a2e640/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/5.%20its-popup-js-error.png)
+
+Once it’s off, we’ll be taken to a page with a hint embedded within the video. Make sure to watch the entire video because you never know…. could be more clues at the end right??With the clue we got from the video, let’s dig deeper and see what’s hidden on web page.
+
+6. We inspect this page and got a hidden directory in response header location.
+
+![task 6](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/f56ab7216e2b15f827b8243e5243787bf9a2e640/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/6.%20we-inspect-this-phpfile-and-got-hidendirectory-in-response-header.png)
+
+
+
+
 
