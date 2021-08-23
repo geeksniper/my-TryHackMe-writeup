@@ -10,8 +10,13 @@ The results show us that it’s got a web service, FTP, and SSH enabled on the m
 
 2. Looks like the default Apache2 landing page, nothing too exciting on the main page and the page source doesn’t reveal much either.
 
-![task 1](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/81d426b322701c188782f2914ba8166ae28b51a9/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/2.%20default-siteview.png)
+![task 2](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/81d426b322701c188782f2914ba8166ae28b51a9/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/2.%20default-siteview.png)
 
+3. Use go buster for directory bruteforce.
 
+![task 3](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/5b4b28b78db2622295c1262d0088841a6c47d765/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/3.%20got-hidden-directory.png)
 
+I used a pre-made list “common.txt” file from the dirb directory and it proved sufficient in this case.we got assets directory.lets jump into it.
+
+4. 
 
