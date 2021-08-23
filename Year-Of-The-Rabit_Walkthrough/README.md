@@ -10,7 +10,7 @@ The results show us that it’s got a web service, FTP, and SSH enabled on the m
 
 2. Looks like the default Apache2 landing page, nothing too exciting on the main page and the page source doesn’t reveal much either.
 
-![task 2](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/81d426b322701c188782f2914ba8166ae28b51a9/Year-Of-The-Rabit_Walkthrough/yearoftherabit- img/2.%20default-siteview.png)
+![task 2](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/18000fea3a413dfd63f51dd5ecf267fe36f70cd6/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/2.%20default-siteview.png)
 
 3. Use go buster for directory bruteforce.
 
