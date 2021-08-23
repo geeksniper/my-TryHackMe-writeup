@@ -48,6 +48,23 @@ The hidden directory contains a PNG image file named Hot_Babe.png. Sounds like a
 
 ![task 8.1](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/6f9a6be88bf657fd2b273f68eafbe2abebd96045/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/8.1%20got-ftp-user-name-and-password.png)
 
+9. Copy all the passwords into a text file and let’s run through the passwords list using Hydra to find our way into the machine.
+
+![task 9](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/2d1ea345944f16606cdeaa895fa9d33350daea5a/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/9.%20use-hydra-for-password-bruteforce-and-got-ftp-password.png)
+
+Perfect, we found our password for ftpuser from the list.
+
+10. Login with this ftp credential.there’s only one file on the FTP server called “Eli’s_Creds.txt”, juicy. Let’s download it.
+
+![task 10](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/2d1ea345944f16606cdeaa895fa9d33350daea5a/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/10.%20login-ftp-got-a-file-download-the-file.png)
+
+11. Let’s open this text file.
+
+![task 10](https://github.com/geeksniper/my-TryHackMe-Writeups/blob/2d1ea345944f16606cdeaa895fa9d33350daea5a/Year-Of-The-Rabit_Walkthrough/yearoftherabit-img/11.%20open-the-file-got-this-now-need-to-decode.png)
+
+
+
+
 
 
 
